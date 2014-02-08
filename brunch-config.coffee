@@ -26,3 +26,11 @@ exports.config =
         vendorCss: '/css/vendor.css'
     static_jade:
       extension: ".static.jade"
+  overrides:
+    production:
+      optimize: true
+      sourceMaps: false
+      plugins:
+        jade:
+          options:
+            pretty: no
