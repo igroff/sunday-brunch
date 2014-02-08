@@ -1,4 +1,4 @@
 # app/base.coffee
 # this is some code butch
-#
-module.exports = alert
+
+console.log "Hi, I'm app/base.coffee"
