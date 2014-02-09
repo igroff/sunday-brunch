@@ -27,6 +27,9 @@ exports.config =
         vendorCss: '/css/vendor.css'
     static_jade:
       extension: ".static.jade"
+      # really, I just want the rendered output to go into the 
+      # well... rendered output
+      #asset: "public/"
   overrides:
     production:
       optimize: true
