@@ -10,7 +10,8 @@ exports.config =
         'css/app.css': /^app/
         'css/vendor.css': /^vendor/
     templates:
-      joinTo: '/dev/null'
+      joinTo:
+        '/dev/null': /.*\.static\.jade/
   plugins:
     autoReload:
       enabled:
