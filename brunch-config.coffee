@@ -5,6 +5,9 @@ exports.config =
       joinTo:
         'js/app.js': /^app/
         'js/vendor.js': /^vendor/
+      order:
+        # things like bootstrap require this, so we have it go first
+        before: ['vendor/jquery-1.11.0.min.js']
     stylesheets:
       joinTo:
         'css/app.css': /^app/

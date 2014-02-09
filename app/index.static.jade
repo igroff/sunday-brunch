@@ -4,6 +4,9 @@ html(lang="en")
     title= pageTitle
     link(rel="stylesheet" media="screen" href= appCss)
     link(rel="stylesheet" media="screen" href= vendorCss)
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible" content="IE=edge")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
     script(type='text/javascript' src= appJs)
     script(type='text/javascript' src= vendorJs)
     script(type='text/javascript').
@@ -16,7 +19,8 @@ html(lang="en")
           $scope.weHaveJQuery = _.isFunction($);
           $scope.weHaveMoment = _.isObject(moment);
           $scope.weHaveLodash = false || _;
-          $scope.weHaveAngular = angular          
+          $scope.weHaveAngular = angular;
+          $scope.vendorCoffeeFiles = false || window.vendorBaseCoffee;
         });
     style
       | .good { color: green; }
@@ -40,6 +44,7 @@ html(lang="en")
       ul(class='validations startOffBad')
         li(ng-class="{good: baseIsObject}") app/*.js files importing
         li(ng-class="{good: coffeeBaseIsObject}") app/*.coffee files importing
+        li(ng-class="{good: vendorCoffeeFiles}") vendor/*.coffee files importing
         li(ng-class="{good: weHaveJQuery}")
           a(href="http://api.jquery.com") JQuery
         li(ng-class="{good: weHaveMoment}") 
