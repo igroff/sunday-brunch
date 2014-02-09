@@ -20,7 +20,6 @@
     "jade-brunch": "1.8.0",
     "coffee-script-brunch": "1.7.3",
     "static-jade-brunch": "~1.7.0",
-    "after-brunch": "0.0.4",
-    "static-markdown-brunch": "*"
+    "after-brunch": "0.0.4"
   }
 }
