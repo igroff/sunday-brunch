@@ -12,6 +12,8 @@ exports.config =
       joinTo:
         'css/app.css': /^app/
         'css/vendor.css': /^vendor/
+      order:
+        after: ['vendor/bootstrap.css', 'vendor/bootstrap-theme.css']
     templates:
       joinTo:
         '/dev/null': /.*\.static\.jade/

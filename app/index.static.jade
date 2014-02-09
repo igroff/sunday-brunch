@@ -1,7 +1,7 @@
 doctype html
 html(lang="en")
   head
-    title= pageTitle
+    title sunday-brunch
     link(rel="stylesheet" media="screen" href= appCss)
     link(rel="stylesheet" media="screen" href= vendorCss)
     meta(charset="utf-8")
@@ -23,6 +23,7 @@ html(lang="en")
           $scope.vendorCoffeeFiles = false || window.vendorBaseCoffee;
         });
     style
+      | body { margin-left: 5px; margin-top: 5px; }
       | .good { color: green; }
       | .startOffBad { color: red; }
       | a { text-decoration: none; color: inherit; }
